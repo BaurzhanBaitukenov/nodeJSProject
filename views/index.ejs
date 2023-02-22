@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>NAMASSE</title>
+    <link rel="icon" type="icon" href="img/icon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="/js/script.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,400;1,700&family=Space+Mono:wght@700&family=Varela+Round&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <style>
+        #panel, #flip {
+            padding: 7px;
+            text-align: center;
+            margin-left: 50px;
+        }
+        #flip{
+        }
+        #panel {
+            display: none;
+        }
+
+    </style>
+</head>
+<body style="background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgb(2, 48, 32) 100%);">
+
+<%-include("layout/header.ejs")%>
+
+
+
+
+<section class="line">
+    <img class="mySlides" src="img/main.jpg " style="width:100%">
+</section>
+
+
+<footer id="about"></footer>
+<div class="row">
+    <div class="col-lg-1 col1">
+    </div>
+    <div class="col-lg-6 col2">
+        <h1 class="gtatext">GRAND THEFT AUTO 5</h1>
+        <img src="img/car1.jpg" class="img-fluid circle" alt="..." style="border: 5px solid black">
+        <h1 class="text">The Grand Theft Auto V: Premium Edition includes the complete GTAV story, Grand Theft Auto Online and all existing gameplay upgrades and content. You’ll also get the Criminal Enterprise Starter Pack, the fastest way to jumpstart your criminal empire in GTA Online.</h1>
+        <div class="minbox">
+            <p>NOTE:<br>
+            <p class="vniz">The $1,000,000 bonus cash in GTA Online included with the Premium Edition as part of the Criminal Enterprise Starter Pack may take up to 7-10 days after the player’s first session in GTA Online to be reflected in their in-game User Account. This bonus cash is only available to first-time Starter Pack owners.</p>
+        </div>
+        <h1  style="color: white">Grand Theft Auto V: Premium Edition</h1>
+        <p class="top1" style="color: rgba(245, 245, 245, 0.9)">The Grand Theft Auto V: Premium Edition includes the complete Grand Theft Auto V story experience, free access to the ever e
+            volving Grand Theft Auto Online and all existing gameplay upgrades and content including The Doomsday Heist, Gunrunning, Smuggler’s Run, Bikers and mu
+            h more. You’ll also get the Criminal Enterprise Starter Pack, the
+            fastest way to jumpstart your criminal empire in Grand Theft Auto Online.</p>
+
+        <h1 style="color: white">GRAND THEFT AUTO V</h1>
+        <p class="top1" style="color: rgba(245, 245, 245, 0.9)">When a young street hustler, a retired bank robber and a terrifying psychopath land themselves in trouble,
+            they must pull off a series of dangerous heists to survive in a city in which they can trust nobody, least of all each other.</p>
+
+        <h1 style="color: white">GRAND THEFT AUTO ONLINE</h1>
+        <p class="bold" style="color: rgba(245, 245, 245, 0.9)">Discover an ever-evolving world of choices and ways to play as you climb
+            the criminal ranks of Los Santos and Blaine County in the ultimate shared Online experience.</p>
+        <p id="demo"></p>
+
+        <footer id="spec"></footer>
+        <button onclick="myFunction()" class="btn success lasttext">Hide/Show recommended characteristics for the game </button>
+        <div id="myDIV">
+            <div class="lastbox1">
+                <p style="color: white">Minimum</p>
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <th scope="row"></th>
+                        <td style="color: white">OS</td>
+                        <td style="color: white">Windows Vista</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td style="color: white">Processor</td>
+                        <td style="color: white">Intel Core 2 Duo 2.4 Ghz / AMD Athlon 64 X2 5400+</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td style="color: white">Memory</td>
+                        <td style="color: white">4 GB RAM</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td style="color: white">Video Card</td>
+                        <td style="color: white">NVIDIA 9800 GT 1GB / AMD HD 4870 1GB (DX 10, 10.1, 11)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td style="color: white">Sound Card</td>
+                        <td style="color: white">100% DirectX 10 compatible</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td style="color: white">HDD Space</td>
+                        <td style="color: white">90 GB available space</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="lastbox2">
+                <p style="color: white">Recommended</p>
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <th scope="row"></th>
+                        <td style="color: white">OS</td>
+                        <td style="color: white">Windows Vista</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td style="color: white">Processor</td>
+                        <td style="color: white">Intel Core 2 Duo 2.4 Ghz / AMD Athlon 64 X2 5400+</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td style="color: white">Memory</td>
+                        <td style="color: white">4 GB RAM</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td style="color: white">Video Card</td>
+                        <td style="color: white">NVIDIA 9800 GT 1GB / AMD HD 4870 1GB (DX 10, 10.1, 11)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td style="color: white">Sound Card</td>
+                        <td style="color: white">100% DirectX 10 compatible</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td style="color: white">HDD Space</td>
+                        <td style="color: white">90 GB available space</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row g-0 bg-light position-relative down1 nalev cardphone" style="border: 2px solid black">
+            <div class="col-md-6 mb-md-0 p-md-4 cardphone">
+                <img src="img/allchar2.jpg" class="w-100" alt="...">
+            </div>
+            <div class="col-md-6 p-4 ps-md-0 cardphone">
+                <h5 class="mt-0 rebold">Who are the GTA 5 characters based on?</h5>
+                <p>Here's a look at what the three voice actors who helped give life to the trinity of thugs look like in real life. Moving from left to right in the image above, Steven Ogg plays Trevor, Shawn Fonteno plays Franklin and Ned Luke is Michael. You can see what they look like in the game below.</p>
+                <button onclick="soundClick()" type="button" class="btn btn- btn-lg btn-primary">More Info</button>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="container1" style="border: 2px solid black">
+            <h1 class="centerre">LEAVE A COMMENT</h1>
+            <form>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="Your name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Last Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" id="email" name="mailid" placeholder="Your Email">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country">Country</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="country" name="country">
+                            <option value="none">Select Country</option>
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                            <option value="japan">Japan</option>
+                            <option value="india">India</option>
+                            <option value="china">China</option>
+                            <option value="china">Kazakhstan</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="Leave comments" style="height:200px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+
+
+    </div>
+
+    <div class="col-lg-5 col3">
+        <img src="img/gta.jpg" class="figure-img img-fluid rounded around centergame" alt="..." width="400px">
+        <button id="myBtn" onclick="soundClick()" type="button" class="btn btn-primary btn-lg btn-success centergame hei">⠀⠀⠀BUY NOW⠀⠀⠀</button>
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2 class="headersnip">Ordering</h2>
+                </div>
+                <div class="modal-body">
+                    <button type="button" class="btn btn-primary btn-lg btn-success ">Go to Seller </button>
+                </div>
+                <div class="modal-footer">
+                    <h3>⠀</h3>
+                </div>
+            </div>
+
+        </div>
+        <button id="order1"  href="javascript:void(0);" onclick="soundClick1();" type="button" class="btn btn- btn-lg btn-success centergame hei" >ADD TO WISH LIST</button>
+        <table class="table caption-top  witab centergame1 ">
+            <tbody>
+            <tr>
+                <th scope="col " style="color: white">DEVELOPER:</th>
+                <th scope="col"></th>
+                <th scope="col " style="color: white">⠀⠀Rockstar Games</th>
+            </tr>
+            <tr>
+                <th scope="row" style="color: white">Publisher</th>
+                <td></td>
+                <td style="color: white">⠀⠀⠀Rockstar Games</td>
+            </tr>
+            <tr>
+                <th scope="row" style="color: white">Date</th>
+                <td></td>
+                <td style="color: white">⠀⠀⠀⠀⠀⠀⠀⠀⠀05/14/20</td>
+            </tr>
+            <tr>
+                <th scope="row" style="color: white" >Platform</th>
+                <td></td>
+                <td style="color: white">⠀⠀⠀⠀⠀⠀⠀⠀⠀Windows</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <figure class="figure centergame">
+                        <img src="img/rel1.jpg" class="figure-img img-fluid rounded around centergame" alt="..." width="300px" height="200px">
+                    </figure>
+                </div>
+                <div class="carousel-item">
+                    <figure class="figure centergame">
+                        <img src="img/rel2.jpg" class="figure-img img-fluid rounded around centergame" alt="..." width="150px" height="200px">
+                    </figure>
+                </div>
+                <div class="carousel-item">
+                    <figure class="figure centergame">
+                        <img src="img/ni.jpg" class="figure-img img-fluid rounded around centergame" alt="..." width="120px" height="200px">
+                    </figure>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Следующий</span>
+            </button>
+        </div>
+        <h1 class="h1video">OFFICIAL TRAILER OF THE GAME</h1>
+        <iframe class="video centergame vid" src="https://vk.com/video_ext.php?oid=120489436&id=161208985&hash=961185ea27771a1d" width="350" height="240" ></iframe>
+
+        <h1 class="h1video">REVIEWS</h1>
+
+        <div class="card centergame down2" style="width: 20rem;"  >
+            <img src="img/user.jpg" class="card-img-top" alt="..." style="border: 4px solid black">
+            <div class="card-body cardphone" style="border: 4px solid black">
+                <h5 class="card-title rebold">Khabib</h5>
+                <p class="card-text">Among all computer games, GTA IV made the biggest impression on me. My friends and I were so into it that we almost failed the session. At that moment I realized that a certain boundary in the gaming industry has already been crossed. The cartoon began to turn into an exciting movie - life.</p>
+                <a href="#" class="btn btn-primary stretched-link">More Info</a>
+            </div>
+        </div>
+
+        <div class="card centergame down2" style="width: 20rem;">
+            <img src="img/user.jpg" class="card-img-top" alt="..." style="border: 4px solid black">
+            <div class="card-body cardphone" style="border: 4px solid black">
+                <h5 class="card-title rebold">John</h5>
+                <p class="card-text">Story lines; gorgeous graphics; not boring; vivid characters; humor; no tolerance or censorship; music; landscapes; features; open world.</p>
+                <a href="#" class="btn btn-primary stretched-link">More Info</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+<footer class="site-footer"  style="background: rgb(218,218,218);">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <h6 style="font-weight: bold; color: black ">About</h6>
+                <p class="text-justify" style="font-weight: bold; color: black">GameShop - games for everyone.</p>
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+                <h6 style="font-weight: bold; color: black">Categories</h6>
+                <ul class="footer-links">
+                    <li><a href=" " style="font-weight: bold; color: black">Home</a></li>
+                    <li><a href="" style="font-weight: bold; color: black">Features</a></li>
+                    <li><a href="" style="font-weight: bold; color: black">Pricing</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+                <p class="copyright-text" style="font-weight: bold; color: black">NaMasse Team
+                </p>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <ul class="social-icons">
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-telegram"></a></li>
+                    <li><a href="#" class="fa fa-instagram"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script src="https://kit.fontawesome.com/b13c41a4dc.js" crossorigin="anonymous"></script>
+<script src="public/js/script.js"></script>
+</body>
+</html>
