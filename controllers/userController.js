@@ -1,7 +1,6 @@
 const UserModel = require("../models/user");
 const passport = require("passport");
 const bcrypt = require('bcrypt');
-
 module.exports.getUsers = async (req,res)=> {
     try {
         const user = await UserModel.find();
@@ -12,7 +11,6 @@ module.exports.getUsers = async (req,res)=> {
         res.json(user);
     }
 }
-
 module.exports.addUser = async (req,res)=> {
     if (!req.body.email && !req.body.password) {
         res.status(400).redirect('/')

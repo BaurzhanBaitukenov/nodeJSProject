@@ -26,15 +26,12 @@ mongoose
 
 
 
-
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-
 app.use(methodOverride('_method'))
-
 
 
 
@@ -42,17 +39,6 @@ app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
 
 
-/*app.get("/secrets", function(req, res){
-    if(req.isAuthenticated()){
-        res.render("secrets")
-    }else{
-        res.redirect("/login")
-    }
-});*/
-
-
-
-/////// routes //////
 app.use("/", require("./routes/root"));
 app.use("/games", require("./routes/games"));
 app.use("/contact", require("./routes/contact"));

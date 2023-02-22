@@ -16,7 +16,19 @@ exports.getProductID = async function (req, res) {
     }
 
 }
-
+exports.postProduct = async (req, res, next) => {
+    const prod = new ProductModel({
+        title: req.body.title,
+        imageURL: req.body.imageURL,
+        price: req.body.price,
+        description: req.body.description
+    });
+    await prod.save()
+        .then(result => {
+            console.log(req.body)
+            res.redirect('/');
+        }).catch(err => console.log(err));
+}
 
 exports.update = async (req, res) => {
     if (!req.body.title || !req.body.imageURL || !req.body.price || !req.body.description) {
@@ -42,19 +54,6 @@ exports.update = async (req, res) => {
 };
 
 
-exports.postProduct = async (req, res, next) => {
-    const prod = new ProductModel({
-        title: req.body.title,
-        imageURL: req.body.imageURL,
-        price: req.body.price,
-        description: req.body.description
-    });
-    await prod.save()
-        .then(result => {
-            console.log(req.body)
-            res.redirect('/');
-        }).catch(err => console.log(err));
-}
 
 exports.destroy = async (req, res) => {
     let id = req.body.id
