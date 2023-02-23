@@ -92,10 +92,10 @@
         ],
         "responses": {
           "400": {
-            "description": "Invalid ID supplied"
+            "description": "Invalid ID supplied:"
           },
           "404": {
-            "description": "Product not found"
+            "description": "Product not found:"
           }
         }
       },
@@ -103,9 +103,9 @@
         "tags": [
           "Product"
         ],
-        "summary": "Delete a product",
+        "summary": "Delete a product:",
         "description": "",
-        "operationId": "deleteProduct",
+        "operationId": "deleteProduct:",
         "produces": [
           "application/json"
         ],
